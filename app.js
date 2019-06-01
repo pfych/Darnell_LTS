@@ -16,6 +16,8 @@ client.on('message', async msg => {
   if (/(^yo darnell)( *|, *|. *)([a-zA-Z0-9])/.test(msg.text())) {
     await pointer.check(msg)
   }
+
+  // This here will be moved to its own function!
   if(msg.channel.id === "582156871905968138" && msg.author.id === "159985870458322944") {
     let player = await msg.guild.fetchMember(msg.content.split("GG ")[1].split(",")[0].replace(/\D/g,''))
     let level = msg.content.split("level ")[1].split("!")[0]
