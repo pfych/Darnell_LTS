@@ -18,6 +18,6 @@ module.exports = {
         }
       })
     })
-    if(!found) yeahNah(msg)
+    if (!found) yeahNah(msg)
   }
 }
