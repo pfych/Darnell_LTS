@@ -19,7 +19,7 @@ module.exports = {
           "url":                    track.album[num].image[3]['#text']
         }
       }
-      msg.channel.send('Recently I have been listening too', {embed})
+      msg.channel.send('Recently I have been listening to', {embed})
     })
   }
 }
