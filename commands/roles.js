@@ -2,7 +2,7 @@ let details = require("../private/private").details
 
 module.exports = {
   check: async function (msg) {
-    if(msg.channel.id === details.servers.nue.bot && msg.author.id === details.bots.mee6) { await nue(msg) } // Nue's Server
+    if(msg.channel.id === details.servers.nue.bot && msg.author.id === details.bots.mee6 && details.servers.nue.regex.test(msg.content) ) { await nue(msg) } // Nue's Server
   }
 }
 
