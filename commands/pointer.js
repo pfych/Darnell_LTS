@@ -19,5 +19,6 @@ module.exports = {
       })
     })
     if (!found) yeahNah(msg)
-  }
+  },
+  roles: require("./roles")
 }
