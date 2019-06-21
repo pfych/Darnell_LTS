@@ -17,7 +17,7 @@ function sleep(ms) {
 }
 
 module.exports = {
-  dance: async function (msg) {
+  dance: async (msg) => {
     if (msg.text().includes("not epic")) return
     let message = await msg.channel.send("Ok, This is epic")
     for (const frame of monster) {

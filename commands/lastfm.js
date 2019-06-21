@@ -1,7 +1,7 @@
 const fm = require('../private/private').fm
 
 module.exports = {
-  getAlbums: async function (msg) {
+  getAlbums: async (msg) => {
     fm.user.getTopAlbums({user: "Puffycheeses", limit: 5, period: '7day'}, function (err, track) {
       if (err) { throw err; }
       let num = Math.floor(Math.random() * 4)

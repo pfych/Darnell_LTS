@@ -20,5 +20,6 @@ module.exports = {
     })
     if (!found) yeahNah(msg)
   },
-  roles: require("./roles")
+  roles: require("./roles"),
+  deleteFilter: require("./delete")
 }

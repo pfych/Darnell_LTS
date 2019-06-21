@@ -6,7 +6,7 @@ module.exports = {
   }
 }
 
-async function nue (msg) {
+async function nue (msg){
   let player = await msg.guild.fetchMember(msg.content.split("GG ")[1].split(",")[0].replace(/\D/g,''))
   let level = msg.content.split("level ")[1].split("!")[0]
   if (level >= 10 && level < 20) {

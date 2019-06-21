@@ -32,7 +32,7 @@ const data = [
 ]
 
 module.exports = {
-  help: async function (msg) {
+  help: async (msg) => {
     data.forEach(item => {
       if (msg.text().replace(/[.,\/#!$%\^&\*;:{}=\-_`~()]/g,"").replace('can you help', '').replace('how do', "").split(" ").includes(item.name)) {
         msg.channel.send(`**${item.name.toUpperCase()}**\n*${item.description}*`, {

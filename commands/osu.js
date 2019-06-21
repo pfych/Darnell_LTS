@@ -2,7 +2,7 @@ const base = require('./base')
 const Discord = require('discord.js')
 const key = require('../private/private')
 
-exports.getData = async function (msg) {
+exports.getData = async (msg) => {
   let mode
   let user = msg.content.toLowerCase().split('stats for ').pop()
 
