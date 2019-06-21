@@ -13,8 +13,8 @@ Discord.Message.prototype.text = function() {
 
 client.on('message', async msg => {
   if(login.filter.some(word => msg.text().includes(word))) return pointer.deleteFilter.delete(msg);
-  if(/(^yo darne(l).*$)/.test(msg.text())) msg.channel.send("yo");
-  if (/(^yo darne(l).*)( *|, *|. *)([a-zA-Z0-9])/.test(msg.text())) {
+  if(/(^(yo|sup|o[ií]) darne(l)*$)/.test(msg.text())) return msg.channel.send("yo");
+  if (/(^(yo|sup|o[ií]) darne(l)*)( *|, *|. *)([a-zA-Z0-9])/.test(msg.text())) {
     await pointer.check(msg);
   }
 

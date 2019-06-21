@@ -25,5 +25,19 @@ module.exports = {
       req: [['favourite', 'album'], ['fav', 'album'], ['listening', 'to'], ['listening', 'too']],
       exec: require('./lastfm').getAlbums
     }
+  ],
+  dictionary: [
+    {
+      words: ["long", "far", "high", "low"],
+      responses: ['Way off', 'Not too far', 'Kinda in the middle']
+    },
+    {
+      words: ["big", "small"],
+      responses: ['Pretty small tbh', 'Absolutely Massive', 'Atomically small']
+    },
+    {
+      words: ["money", "cost", "charge", "paycheck", "pay check"],
+      responses: ['Bruh I dont do math', 'Is that something I\'m too broke to understand?']
+    }
   ]
 }
