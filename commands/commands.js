@@ -32,12 +32,16 @@ module.exports = {
       responses: ['Way off', 'Not too far', 'Kinda in the middle']
     },
     {
-      words: ["big", "small"],
+      words: ["big", "small", "large", "tiny"],
       responses: ['Pretty small tbh', 'Absolutely Massive', 'Atomically small']
     },
     {
       words: ["money", "cost", "charge", "paycheck", "pay check"],
       responses: ['Bruh I dont do math', 'Is that something I\'m too broke to understand?']
+    },
+    {
+      words: ["the fuck", "what?"],
+      responses: ["no u", "bruh sound effect #2"]
     }
   ]
 }
