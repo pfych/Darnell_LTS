@@ -13,7 +13,7 @@ module.exports = {
         "color":                    11011009,
         "footer": {
           "icon_url":               "https://www.iconsdb.com/icons/preview/red/lastfm-2-xxl.png",
-          "text":                   "Data provided by lastfm"
+          "text":                   "Data provided by last.fm"
         },
         "thumbnail": {
           "url":                    track.album[num].image[3]['#text']
