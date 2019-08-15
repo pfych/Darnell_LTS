@@ -2,7 +2,7 @@ module.exports = {
   commands: [
     {
       name: 'osu',
-      req: [['can you grab me', 'osu', 'stats', 'for'], ['can you grab', 'osu', 'stats', 'for']],
+      req: [['can you grab', 'osu', 'stats', 'for']],
       exec: require('./osu').getData
     },
     {
