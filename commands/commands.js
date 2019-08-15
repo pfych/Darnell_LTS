@@ -2,12 +2,12 @@ module.exports = {
   commands: [
     {
       name: 'osu',
-      req: [['can you grab me', 'osu', 'stats', 'for']],
+      req: [['can you grab me', 'osu', 'stats', 'for'], ['can you grab', 'osu', 'stats', 'for']],
       exec: require('./osu').getData
     },
     {
       name: 'help',
-      req: [['can you', 'help'], ['how', 'do']],
+      req: [['can you', 'help'], ['how', 'do'], ['help']],
       exec: require('./help').help
     },
     {
