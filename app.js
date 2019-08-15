@@ -10,9 +10,8 @@ Discord.Message.prototype.text = function() {
   return this.content.toLowerCase();
 };
 
-
 client.on('message', async msg => {
-  if(login.filter.some(word => msg.text().includes(word))) return pointer.deleteFilter.delete(msg);
+  if (/(^(yo|sup|o[ií]) darne(l)*)( *|, *|. *)([a-zA-Z0-9])/.test(msg.text())) {if(login.filter.some(word => msg.text().includes(word))) return pointer.deleteFilter.delete(msg);}
   if(/(^(yo|sup|o[ií]) darne(l)*$)/.test(msg.text())) return msg.channel.send("yo");
   if (/(^(yo|sup|o[ií]) darne(l)*)( *|, *|. *)([a-zA-Z0-9])/.test(msg.text())) {
     await pointer.check(msg);
